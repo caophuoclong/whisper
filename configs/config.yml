@@ -1,0 +1,23 @@
+app:
+  name: whisper
+  version: 1.0.0
+  env: development
+jwt:
+  jwt_secret: whisper
+  jwt_expiration: 10
+  jwt_refresh_expiration: 432000
+  jwt_signing_algorithm: HS256
+http:
+  port: :8080
+  host: localhost
+logger:
+  level: debug
+  format: json
+  output: stdout
+postgres:
+  host: localhost
+  port: 5432
+  user: whisper
+  password: whisper123
+  name: whisper
+  sslmode: disable
